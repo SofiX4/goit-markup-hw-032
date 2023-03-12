@@ -23,6 +23,18 @@
     --color-grey: #2e2f42;
 }
 
+p, h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+ul {
+    padding-left: 0;
+    margin: 0;
+}
+
+button {
+    cursor: pointer;
+}
 
 body {
     font-family: 'Roboto', sans-serif;
@@ -37,6 +49,18 @@ body {
     list-style: none;
 }
 
+.conteiner {
+    width: 1128px;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin: 0 auto;
+}
+
+.section {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
 .header-logo {
     font-family: 'Raleway', sans-serif;
     font-weight: 800;
@@ -47,6 +71,23 @@ body {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--logo-color);
+    margin-right: 76px;
+}
+
+.header-container {
+    display: flex;
+    padding: 24px 0;
+}
+
+.header-all {
+    display: flex;
+    align-items: center;
+    margin-right: auto;
+}
+
+.header-nav {
+    display: flex;
+    gap: 40px;
 }
 
 .header-logo-studio {
@@ -63,6 +104,12 @@ body {
 
 .address{
     font-style: normal;
+}
+
+.address-list {
+    display: flex;
+    gap: 40px;
+
 }
 
 .header-address {
@@ -84,6 +131,7 @@ body {
 
 .hero {
     background-color: var(--background-color-hero);
+    padding-bottom: 188px;
 }
 
 .hero-title {
@@ -92,6 +140,10 @@ body {
     text-align: center;
     letter-spacing: 0.02em;
     color: var(--hero-title-color);
+    max-width: 496px;
+    margin: 0 auto;
+    padding-top: 188px;
+    padding-bottom: 48px;
 }
 
 .hero-btn {
@@ -103,8 +155,11 @@ body {
     background-color: var(--hero-btn-background-color);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
-    cursor: pointer;
     color: var(--hero-btn-color);
+    width: 169px;
+    height: 56px;
+    display: block;
+    margin: 0 auto;
 }
 
 .hero-btn:hover,
@@ -113,6 +168,11 @@ body {
 }
 
 /* --------------Strengths-------------- */
+
+.strengths-list {
+    display: flex;
+    gap: 24px;
+}
 
 .strengths-title {
     font-weight: 500;
@@ -140,7 +200,35 @@ body {
     color: var(--color-navy-blue);
 }
 
+.doing-list {
+    display: flex;
+    gap: 24px;
+    justify-content: center;
+    padding-top: 72px;
+    margin-bottom: 120px;
+}
+
 /* --------------Our team-------------- */
+
+.our-team {
+    background-color: var(--color-cloud);
+}
+
+.our-team-list {
+    display: flex;
+    gap: 24px;
+}
+
+.our-team-list-wrap {
+    
+}
+
+.our-team-item {
+    background-color: var(--hero-title-color);
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+    border-radius: 0px 0px 4px 4px;
+    width: calc((100%-72px)/4);
+}
 
 .our-team-title {
     font-size: 36px;
@@ -149,6 +237,13 @@ body {
     letter-spacing: 0.02em;
     text-transform: capitalize;
     color: var(--color-navy-blue);
+    padding-bottom: 72px;
+}
+
+.our-team {
+    padding-top: 32px;
+    padding-bottom: 32px;
+    
 }
 
 .our-team-subtitle {
@@ -166,12 +261,17 @@ body {
     text-align: center;
     letter-spacing: 0.02em;
     color: var(--color-slate);
+    margin-top: 8px;
 }
 
 /* --------------Footer-------------- */
 
 .footer{
     background-color: var(--color-navy-blue);
+}
+
+.footer-wrap {
+    padding: 100px 0;
 }
 
 .footer-logo-studio{
@@ -183,6 +283,7 @@ body {
     line-height: 1.17;
     letter-spacing: 0.02em;
     color: var(--color-cornflower);
+    width: 264px;
 }
 
 
@@ -195,17 +296,39 @@ body {
 .filter-btn{
     background-color: var(--color-cornflower);
     color: var(--color-iris);
-    cursor: pointer;
     line-height: 1.5;
     font-size: 16px;
     font-weight: 500;
     letter-spacing: 0.04em;
     font-family: 'Roboto', sans-serif;
+    padding: 12px 24px;
 }
 
 .filter-btn:is(:hover, :focus){
     background-color: var(--color-ocean);
     color: var(--color-cloud);
+}
+
+.filter-list {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    margin-top: 96px;
+    margin-bottom: 72px;
+}
+
+.project-list {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 24px;
+    row-gap: 48px;
+    margin-bottom: 120px;
+}
+
+.project-item {
+    width: calc((100% - 48px) / 3);
+    background: #FFFFFF;
+    border: 1px solid #E7E9FC;
 }
 
 .project-title {
