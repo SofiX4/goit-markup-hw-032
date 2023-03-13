@@ -225,6 +225,9 @@ body {
 
 .our-team {
     background-color: var(--color-cloud);
+}
+
+.our-team-name {
     padding: 32px 16px;
 }
 
